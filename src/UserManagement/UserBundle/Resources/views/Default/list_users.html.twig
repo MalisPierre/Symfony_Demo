@@ -1,0 +1,15 @@
+{% extends '@CommonBundle/base.html.twig' %}
+
+{% block title %}List Users{% endblock %}
+
+{% block body %}
+
+    <h1>Mods :</h1>
+
+    <ul>
+        {% for user in users %}
+            <li>User [{{ user.first_name }} , {{ user.last_name }}]</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
